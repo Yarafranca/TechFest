@@ -6,25 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFest</title>
     <link rel="stylesheet" href="css/estilo.css"/>
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+    crossorigin="anonymous">
 <body>
-    <nav>
-      <img src="logo.jpeg"
-       alt="Image" height="250" width="200">
-      <h1>Tech Fest: Eventos de tecnologia</h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Compra de Ingressos</a></li>
-        <li><a href="#">Contatos</a></li>
-      </ul>
-    </nav>
-    <section>
-        <h1>Seja Bem-Vindo ao Melhor Site de Eventos e Tecnologia!!!</h1>
-        <p>Aqui, você encontrará qualquer tipo de evento relacionado a tecnologia.</p>
-        <img src="https://imagens.tiespecialistas.com.br/2022/09/evento-msp-summit-op3.jpeg" 
-         alt="Evento tecnologico"/>
-    </section>
-    <footer>
-        <p>FerasDoHTML5 &copy; 2022</p>
-    </footer>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <img id="logo" src="img/logo.png" alt="TechFest">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="main-banner">
+                <div id="search-form">
+                    <h1>A maneira mais fácil de encontrar eventos presenciais e online!!!</h1>
+                    <p>Conecte-se nesse mundo digital.</p>
+                    <form>
+                        <input type="text" name="event" placeholder="Digite o evento">
+                        <select name="region">
+                            <option value="">Todos os estados</option>
+                        </select>
+                        <select name="category">
+                            <option value="">Categoria</option>
+                        </select>
+                        <input type="submit" value="Pesquisar">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main id="lastjobs-container" class="wrapper">
+			<h1>Futuros Eventos</h1>
+			<ul>
+				<li>
+					<a href="job.html" class="clickarea">
+						<div class="company-box">
+							<img src="img/E3.png" height="75">
+							<div class="company-info">
+								<h3>Evento</h3>
+                            <p>De 13 à 16 de Junho de 2023.</p>
+							</div>
+						</div>
+						<div class="locality">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>Convention Center, California</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="clickarea">
+						<div class="company-box">
+							<img src="img/ccxp22.png" height="75">
+							<div class="company-info">
+								<h3>Evento</h3>
+								<p>De 1 à 4 de Dezembro.</p>
+							</div>
+						</div>
+						<div class="locality">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>Brasil, São Paulo</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="clickarea">
+						<div class="company-box">
+							<img src="img/WebSummit.png" height="75">
+							<div class="company-info">
+								<h3>Evento</h3>
+								<p>De 1 à 4 de Maio de 2023.</p>
+							</div>
+						</div>
+						<div class="locality">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>Brasil, Rio de Janeiro</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="clickarea">
+						<div class="company-box">
+							<img src="img/bgs.png" height="75">
+							<div class="company-info">
+								<h3>Evento</h3>
+								<p>Datas não definidas.</p>
+							</div>
+						</div>
+						<div class="locality">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>Expo Center Norte, São Paulo</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="btnevents-container">
+				<a href="#" class="btn-events">Ver mais eventos</a>
+			</div>
+		</main>
+    </div>
+</body>    
 </html>
