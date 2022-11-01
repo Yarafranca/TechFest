@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Kani&display=swap");
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Kanit", sans-serif;
+}
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #212226;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	background-color: white;
+	align-items: center;
+	padding: 0px 20px;
+}
+
+.logo{
+	width: 170px;
+	margin-top: -9px;
+}
+
+.search-box{
+	position: relative;
+	width: 500px;
+}
+
+input{
+	position: relative;
+	display: inline-block;
+	font-size: 17px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+
+input[type="text"]{
+	background: rgb(240, 240, 240);
+	margin-left: 10%;
+	margin-right: -20%;
+	width: 340px;
+	height: 40px;
+	border: none;
+	outline: none;
+	padding: 0 25px;
+	border-radius: 25px 0 0 25px;
+}
+
+input[type="submit"]{
+	position: relative;
+	border-radius: 0 25px 25px 0;
+	margin-left: -4%;
+	margin-right: -4%;
+	width: 150px;
+	height: 40px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: rgb(0, 255, 221);
+	color: black;
+}
+
+input[type="submit"]:hover{
+	background: #ff5722;
+}
+
+.nav-menu{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav-menu li a{
+	text-decoration: none;
+	color: #19191d;
+	padding: 16px;
+	font-size: 15px;
+}
+
+.nav-menu li a:hover{
+	background-color: #d8d8d82a;
+	border-bottom: 1px solid #000000;
+}
+
+.login{
+	padding: 10px 40px;
+	font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(0, 255, 221);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.cadastro {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #202020;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.cadastro:hover {
+    background-color: #3d3d3d;
+    transition: 1s background;
+}
+
+#main-banner{
+	background: url('../img/banner2.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px;
+	height: -100px;
+}
+
+#search-form {
+	position: relative;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15em;
+	padding-bottom: 15em;
+	text-align: center;
+}
+
+#search-form h1 {
+	font-size: 40px;
+}
+
+#search-form p {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+h2{
+	color: #fff;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.container
+{
+	position: relative;
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 55px;
+}
+.container .box
+{
+	position: relative;
+	width: 280px;
+	height: 400px;
+	margin: 20px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.container .box .imgBx
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	clip-path: circle(400px at center 100px);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+.container .box:hover .imgBx
+{
+	clip-path: circle(80px at center 100px);
+	transition-delay: 0s;
+}
+.container .box:hover .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container .box .content
+{
+	color: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 55%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.container .box .content h2
+{
+	color: rgb(0, 255, 221);
+	margin: 0;
+	padding: 0;
+}
+.container .box .content a
+{
+	text-decoration: none;
+	background: rgb(0, 255, 221);
+	color: #000;
+	padding: 5px;
+	display: inline-block;
+}
+.container .box .content h2,
+.container .box .content p,
+.container .box .content a
+{
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateY(20px);
+}
+.container .box:hover .content h2
+{
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.5s;
+}
+.container .box:hover .content p
+{
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.7s;
+}
+.container .box:hover .content a
+{
+	opacity: 1;
+	transform: translateY(0px);
+	transition-delay: 0.9s;
+}
+
+.btnevents-container {
+	margin-top: 50px;
+	margin-left: 510px;
+	margin-right: auto;
+}
+
+.btn-events {
+	text-transform: uppercase;
+	background-color: rgb(0, 255, 221);
+	color: black;
+	border: 2px solid rgb(0, 255, 221);
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+.btn-events:hover {
+	background-color: #2226ff;
+	color: #FFF;
