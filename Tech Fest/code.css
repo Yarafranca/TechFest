@@ -12,12 +12,6 @@
 body{
 	width: 100%;
 	min-height: 100vh;
-	background-color: #212226;
-}
-
-body{
-	width: 100%;
-	min-height: 100vh;
 	background: linear-gradient(60deg, rgb(255, 220, 237), rgb(0, 255, 221));
       background-size: 300% 300%;
       animation: colors 17s ease infinite;
@@ -99,34 +93,6 @@ input[type="submit"]:hover{
 	background: #fff;
 }
 
-main{
-	display: flex;
-	justify-content: space-evenly;
-	height: 55px;
-	background-color: black;
-	align-items: center;
-	padding: 0px 20px;
-}
-
-.nav-menu{
-	margin-left: 77%;
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.nav-menu li a{
-	text-decoration: none;
-	color: #fff;
-	padding: 16px;
-	font-size: 15px;
-}
-
-.nav-menu li a:hover{
-	background-color: #d8d8d82a;
-	border-bottom: 1px solid #fff;
-}
-
 .login{
 	padding: 10px 40px;
 	font-size: 15px;
@@ -153,6 +119,49 @@ main{
 .cadastro:hover {
     background-color: #3d3d3d;
     transition: 1s background;
+}
+
+/*Main Menu*/
+main{
+	display: flex;
+	justify-content: space-evenly;
+	height: 55px;
+	background-color: #111;
+	align-items: center;
+	padding: 0px 20px;
+}
+
+.nav-menu{
+	margin-left: none;
+	margin-right: auto;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav-menu li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 16px;
+	font-size: 15px;
+}
+
+.nav-menu li a:hover{
+	background-color: #d8d8d82a;
+	border-bottom: 1px solid #fff;
+}
+
+/*Texto*/
+h1{
+	text-align: center;
+	margin-top: 35px;
+	font-size: 50px;
+}
+
+nav p{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 20px;
 }
 
 /*Futuros Eventos*/
