@@ -12,9 +12,9 @@
 body{
 	width: 100%;
 	min-height: 100vh;
-	background: linear-gradient(60deg, rgb(255, 220, 237), rgb(0, 255, 221));
+	background: linear-gradient(60deg, rgb(255, 255, 255), rgb(117, 219, 206));
       background-size: 300% 300%;
-      animation: colors 20s ease infinite;
+      animation: colors 5s ease infinite;
 }
 @keyframes colors {
 	0% {
@@ -103,7 +103,8 @@ input[type="submit"]:hover{
 }
 
 .nav-menu{
-	margin-left: 77%;
+	margin-right: 73%;
+	margin-left: auto;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -156,7 +157,7 @@ h1{
 	margin-top: 50px;
 }
 
-.container
+.container1
 {
 	position: relative;
 	width: 1200px;
@@ -164,8 +165,10 @@ h1{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 55px;
+	margin-left: auto;
+	margin-right: auto;
 }
-.container .box
+.container1 .box
 {
 	position: relative;
 	width: 280px;
@@ -174,7 +177,7 @@ h1{
 	box-sizing: border-box;
 	overflow: hidden;
 }
-.container .box .imgBx
+.container1 .box .imgBx
 {
 	position: relative;
 	top: 0;
@@ -186,12 +189,12 @@ h1{
 	transition: 0.5s;
 	transition-delay: 0.5s;
 }
-.container .box:hover .imgBx
+.container1 .box:hover .imgBx
 {
 	clip-path: circle(80px at center 100px);
 	transition-delay: 0s;
 }
-.container .box:hover .imgBx img
+.container1 .box:hover .imgBx img
 {
 	position: absolute;
 	top: 0;
@@ -200,7 +203,7 @@ h1{
 	height: 100%;
 	object-fit: cover;
 }
-.container .box .content
+.container1 .box .content
 {
 	color: black;
 	position: absolute;
@@ -212,13 +215,13 @@ h1{
 	box-sizing: border-box;
 	text-align: center;
 }
-.container .box .content h2
+.container1 .box .content h2
 {
 	color: black;
 	margin: 0;
 	padding: 0;
 }
-.container .box .content a
+.container1 .box .content a
 {
 	text-decoration: none;
 	background: rgb(0, 255, 221);
@@ -226,27 +229,27 @@ h1{
 	padding: 5px;
 	display: inline-block;
 }
-.container .box .content h2,
-.container .box .content p,
-.container .box .content a
+.container1 .box .content h2,
+.container1 .box .content p,
+.container1 .box .content a
 {
 	opacity: 0;
 	transition: 0.5s;
 	transform: translateY(20px);
 }
-.container .box:hover .content h2
+.container1 .box:hover .content h2
 {
 	opacity: 1;
 	transform: translateY(0px);
 	transition-delay: 0.5s;
 }
-.container .box:hover .content p
+.container1 .box:hover .content p
 {
 	opacity: 1;
 	transform: translateY(0px);
 	transition-delay: 0.7s;
 }
-.container .box:hover .content a
+.container1 .box:hover .content a
 {
 	opacity: 1;
 	transform: translateY(0px);
@@ -351,7 +354,7 @@ h3,h4,h5,h6{
 }
 
 section.module.parallax-2{
-    background-image: url("https://cdn.vox-cdn.com/thumbor/d4puYUdSqVKatdU7L8zzCqvJ6OI=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/11713723/GettyImages_578965880.jpg");
+    background-image: url("https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2020/07/ccxp-2019.jpg");
 }
 
 section.module.parallax-3{
@@ -382,4 +385,15 @@ section.module.parallax-3{
     section.module.parallax h1 {
       font-size: 36px;
     }
-  }
+  }	
+
+footer{
+	background-color: black;
+	
+}
+
+.text{
+	text-align: center;
+	color: #fff;
+
+}
