@@ -4,59 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css">
     <title>TechFest</title>
-    <link rel="stylesheet" href="css/estilo.css"/>
+</head>
+
 <body>
-	<!-- Aqui fica o cabeçalho do site até a linha 31 -->
-	<header>
-		<div>
-			<a href="/PaginaInicial.html">
-				<img src="./img/logoSite.png" alt="logo" class="logo"/>
-			</a>
-		</div>
-		<div class="search-box">
-			<input type="text" class="search-txt" placeholder="Pesquise o evento">
-			<input type="submit" value="Pesquisar">
-		</div>
-		<div class="bnt">
-			<button href="#" class="login">Login</button>
-			<button href="#" class="cadastro">Cadastro</button>
-		</div>
-	</header>
-	<main class="main1">
-		<ul class="nav-menu">
-			<li><a href="file:///C:/Users/aluno/Documents/site.html/PaginaInicial.html">Home</a></li>
-			<li><a href="#">Evento</a></li>
-			<li><a href="#">Criar Evento</a></li>
-			<li><a href="#">Contato</a></li>
-		</ul>
-	</main>
-	<!--Aqui começa o Parallax-->
+    <div class="container">
+        <!-- Começo da nav -->
+        <nav>
+            <div class="logo">
+                <a href="PaginaInicial.html">TechFest</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Login</a></li>
+                <button>Cadastre-se</button>
+            </ul>
+            <div class="menu-icon">
+                <img src="img/menu.png">
+            </div>
+        </nav>
+        <!-- Fim da nav -->
+        <main>
+            <div class="text-bx">
+                <h1>Qualquer tipo de texto aqui <b> qualquer coisa aqui </b> </h1>
+                <p>
+                Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s
+                </p>
+                <div class="input-bx">
+                    <input type="search" placeholder="Pesquisar">
+                    <button>Pesquisar</button>
+                </div>
+                <div class="medias-socias">
+                    <a href="#"> <i class="fa fa-instagram"></i> </a>
+                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                    <a href="#"> <i class="fa fa-twitter"></i> </a>
+                    <a href="#"> <i class="fa fa-youtube-play"></i> </a>
+                    <a href="#"> <i class="fa fa-whatsapp"></i> </a>
+                </div>
+            </div>
+            <div class="img-bx">
+                <img src="img/alterLogo.png">
+            </div>
+        </main>
+    </div>
+	<br><br><br>
+	<!-- Começo do Parallax -->
 	<div class="wrapper">
 		<main class="main2">
 		  <section class="module parallax parallax-1">
-        <h1>Tudo sobre a história de eventos épicos e memoráveis!!!</h1>
+        	<h1>Maiores informações sobre seus eventos geeks favoritos!</h1>
 		  </section>
-	
 		  <section class="module content">
-			<div class="container">
+			<div class="container2">
 			  <h3>A História da Comic Con </h3>
 			  <p>
 				"No verão de 1970, três amigos decidiram organizar uma convenção para fãs de quadrinhos que moravam em San Diego, cidade no sul do estado da Califórnia, nos EUA. O trio era formado pelo desenhista Shel Dorf, o dono de uma loja de quadrinhos Richard Alf, e o publisher Ken Krueger. 
-Na primeira edição, mais de 300 pessoas passaram três dias no U.S. Grant Hotel acompanhando a programação – que, em proporções menores, já era muito parecida com a atual, com exibições de filmes, palestras e estandes das principais marcas da indústria. Naquele primeiro ano, um dos destaques foi a presença de Jack Kirby, criador dos super-heróis Capitão América e Hulk." (Fonte: https://revistagalileu.globo.com/)
+				Na primeira edição, mais de 300 pessoas passaram três dias no U.S. Grant Hotel acompanhando a programação – que, em proporções menores, já era muito parecida com a atual, com exibições de filmes, palestras e estandes das principais marcas da indústria. Naquele primeiro ano, um dos destaques foi a presença de Jack Kirby, criador dos super-heróis Capitão América e Hulk."
+				<br>
+				(Fonte: https://revistagalileu.globo.com/) 
 			  </p>
 			  <p>
-				
+				Desde a sua criação, o evento sempre vem atraindo cada vez mais fãs ao redor do mundo inteiro.
 			  </p>          
 			</div>
 		  </section>
-	
 		  <section class="module parallax parallax-2">
 			<h1>Algum texto aqui</h1>
 		  </section>
-	
 		  <section class="module content">
-			<div class="container">
+			<div class="container2">
 			  <h3>Qualquer texto aqui..</h3>
 			  <p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et, magnam eius!
@@ -66,27 +90,28 @@ Na primeira edição, mais de 300 pessoas passaram três dias no U.S. Grant Hote
 			  </p>          
 			</div>
 		  </section>
-	
 		  <section class="module parallax parallax-3">
 			<h1> Avenger  Assemble! </h1>
 		  </section>
-	
 		  <section class="module content">
-			<div class="container">
+			<div class="container2">
 			  <h3>Começo de uma era..</h3>
 			  <p>
-				Em 2010, a marvel studios fez um grande anuncio,
+				Em 2010, a Marvel Studios fez um grande anúncio para os fãs da marca, pela primeira vez na história do estúdio, teria seis heróis unidos em um único filme!
+				Dando inicio a era do MCU(Marvel Cinematic Universe).
 			  </p>
 			  <p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam vel et, magnam eius!
+				Até os dias de hoje, 29 filmes e 9 séries foram produzidas pela marca e com planos para mais serem desenvolvidas!
 			  </p> 	           
 			</div>
 		  </section>
 		</main>
+		<!-- Fim do Parallax-->
 	</div>
-	  <!--Futuros eventos -->
-	<br>
-	<h1>Futuros Eventos</h1>	 
+	<!-- Eventes em Destaque-->
+	<br><br><br><br>
+	<div class="destaque">
+	<h1>Eventos em Destaque</h1>	 
 	<div class="container1">
 		<div class="box">
 			<div class="imgBx">
@@ -136,7 +161,7 @@ Na primeira edição, mais de 300 pessoas passaram três dias no U.S. Grant Hote
 			</div>
 			<div class="content">
 				<h2>E3</h2>
-				<p>Venha para a maior feira internacional de games. Confira continuações e novos lançamentos de jogos.</p>
+				<p>Venha para a maior feira internacional de games.</p>
 				<br>
 				<p>De 13 à 16 de Junho de 2023, Convention Center - California.</p>
 				<br>
@@ -147,15 +172,13 @@ Na primeira edição, mais de 300 pessoas passaram três dias no U.S. Grant Hote
 			<a href="#" class="btn-events">Ver mais eventos</a>
 		</div>
 	</div>
+	</div>
 		<div id="search-form">
 		</div>
 	</div>
-	<br>
-	<br>
-	<footer class="text">
-		<br>
-		<p>FerasDoHTML &copy; 2022</p><br><br><br>
-		<p>TechFest - Seu Site de Eventos e Tecnologia</p>
-	</footer>
+	<!-- Fim dos Eventes em Destaque-->
+
+	<!-- Clique aqui para abrir o JavaScript-->
+    <script src="main.js"></script>
 </body>
 </html>
