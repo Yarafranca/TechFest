@@ -1,4 +1,4 @@
-/*Fonde do Site*/
+/*Fonte do Site*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
@@ -251,25 +251,46 @@ h3,h4,h5,h6{
   }
   
   section.module.parallax-1{
-    background-image: url("https://cdn.vox-cdn.com/thumbor/d4puYUdSqVKatdU7L8zzCqvJ6OI=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/11713723/GettyImages_578965880.jpg");
+    background-image: url("");
 }
 
 section.module.parallax-2{
-    background-image: url("https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2020/07/ccxp-2019.jpg");
+    background-image: url("https://poltronanerd.com.br/wp-content/uploads/2020/05/comic-con-international.jpg");
 }
 
 section.module.parallax-3{
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/The_Avengers_Cast_2010_Comic-Con.jpg/2560px-The_Avengers_Cast_2010_Comic-Con.jpg");
+    background-image: url("https://s2.glbimg.com/JJC6sRsUaJpgzIMxVtgMqti6kEA=/0x0:4000x2670/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/k/v/L53L5GRKWAkWActs9rLg/aves-de-rapina-ccxp-2019.jpg");
+}
+
+section.module.parallax-4{
+    background-image: url("https://f.i.uol.com.br/fotografia/2022/02/21/16454738466213f0369d266_1645473846_3x2_md.jpg");
 }
 
   section.module.parallax h1{
-    color: yellow;
+    color: rgb(210, 255, 247);
     text-align: center;
     font-size: 78px;
     z-index: 50;
     text-transform: uppercase;
   }
   
+  @media all and (max-width: 820px) {
+    section.module h2 {
+      font-size: 32px;
+    }
+    .module h2, p{
+      padding: 0 8px;
+    }
+  
+    .container2{
+      margin:0;
+      padding:0;
+    }
+  
+    section.module.parallax h1 {
+      font-size: 36px;
+    }
+  }  
   @media all and (max-width: 820px) {
     section.module h2 {
       font-size: 32px;
@@ -416,4 +437,117 @@ section.module.parallax-3{
 .btn-events:hover {
 	background-color: rgb(0, 255, 221);
 	color: #FFF;
+}
+
+/*Fim do Site*/
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: black;
+}
+.rodape{
+    display: flex;
+}
+.rodape .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .sobre{
+    color: #fff;
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box .sobre:after{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background: rgb(0, 255, 221);
+    top: -10px;
+}
+.box .sobre:before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: -10px;
+}
+
+.left .content p{
+    text-align: justify;
+}
+
+.center .content .text{
+    font-size: 17px;
+    font-weight: 500px;
+    padding-left: 10px;
+}
+.center .content .phone{
+    margin: 10px 0;
+}
+.center .content .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 50%;
+    font-size: 16px;
+    background: rgb(240, 240, 240);
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form .text{
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    background: aqua;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .btn button:hover{
+    background: #fff;
+}
+.bottom .center{
+    padding: 5px;
+    font-size: 15px;
+    background: #151515;
+    text-align: center;
+}
+.bottom .center span{
+    color: #656565;
+}
+.bottom .center a{
+    color: aqua;
+    text-decoration: none;
+}
+.bottom .center a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px){
+    footer{
+        position: fixed;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
 }
